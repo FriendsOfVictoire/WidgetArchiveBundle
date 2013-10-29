@@ -1,0 +1,5 @@
+victoire_cms:
+    widgets:
+        archive:
+            class: "Victoire\\ArchiveBundle\\Entity\\WidgetArchive"
+            name: archive

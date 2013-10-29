@@ -1,0 +1,32 @@
+{% block body %}
+
+{#
+   _   _   _   _   _   _   _
+  / \ / \ / \ / \ / \ / \ / \
+ ( C ) o ) m ) m ) o ) n ) s )
+  \_/ \_/ \_/ \_/ \_/ \_/ \_/
+
+#}
+
+<div class="widget" id="widget-{{widget.id}}">
+{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
+
+{% block content %}
+    {% for year, months in articles %}
+    <li>{{year}}</li>
+    <ul>
+        {% for month, articles in months %}
+        <li>{{month}}</li>
+        <ul>
+            {% for article in articles %}
+            <li>{{article.createdAt|date('d')}}: <a href="{{path('victoire_cms_page_show', {'url': article.url})}}">{{article.title}}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</ul>
+{% endblock content %}
+</div>
+
+{% endblock body %}
