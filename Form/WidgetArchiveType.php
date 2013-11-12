@@ -22,18 +22,13 @@ class WidgetArchiveType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        //if no entity is given, we generate the static form
-        $builder
-        ->add('page', null,
-            array(
-                "label" => "",
-                "attr" =>array("class" => "hide")
-            )
-        )
-        ->add('slot', 'hidden');
-
-
-
+        $builder->add('page', null,
+                    array(
+                        "label" => "",
+                        "attr" =>array("class" => "hide")
+                    )
+                )
+                ->add('slot', 'hidden');
     }
 
 
