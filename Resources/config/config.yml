@@ -3,3 +3,9 @@ victoire_cms:
         archive:
             class: "Victoire\\ArchiveBundle\\Entity\\WidgetArchive"
             name: archive
+
+jms_translation:
+    configs:
+        victoire_archive_bundle:
+            dirs: ["@VictoireArchiveBundle"]
+            output_dir: "@VictoireArchiveBundle/Resources/translations"
