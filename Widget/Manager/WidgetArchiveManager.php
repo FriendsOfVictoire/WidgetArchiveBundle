@@ -41,7 +41,7 @@ protected $container;
      *
      * @return widget show
      */
-    public function render($widget)
+    public function render($widget, $page)
     {
 
         $articleRepo = $this->container->get('doctrine.orm.entity_manager')->getRepository('VictoireBlogBundle:Article');
@@ -60,6 +60,7 @@ protected $container;
             array(
                 "widget" => $widget,
                 "articles" => $articlesArray,
+                "page" => $page
             )
         );
     }
