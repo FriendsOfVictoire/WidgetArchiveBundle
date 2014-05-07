@@ -19,7 +19,7 @@
         <li>{{month}}</li>
         <ul>
             {% for article in articles %}
-            <li>{{article.createdAt|date('d')}}: <a href="{{path('victoire_cms_page_show', {'url': article.url})}}">{{article.title}}</a></li>
+            <li>{{article.createdAt|date('d')}}: <a href="{{path('victoire_core_page_show', {'url': article.url})}}">{{article.title}}</a></li>
             {% endfor %}
         </ul>
         {% endfor %}

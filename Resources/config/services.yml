@@ -1,7 +1,7 @@
 services:
-    victoire_cms.twig.widget_archive_manager:
+    victoire_core.twig.widget_archive_manager:
         class: Victoire\ArchiveBundle\Widget\Manager\WidgetArchiveManager
         arguments: [@service_container]
 
     widget_archive_manager:
-        alias: victoire_cms.twig.widget_archive_manager
+        alias: victoire_core.twig.widget_archive_manager
