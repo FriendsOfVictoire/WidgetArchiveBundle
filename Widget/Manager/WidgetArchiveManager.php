@@ -57,7 +57,7 @@ class WidgetArchiveManager extends BaseWidgetManager implements WidgetManagerInt
 
         $articleRepo = $em->getRepository('VictoireBlogBundle:Article');
 
-        $articles = $articleRepo->findBy(array(), array('createdAt'=>'DESC'));
+        $articles = $articleRepo->findBy(array(), array('createdAt' => 'DESC'));
 
         $articlesArray = array();
 

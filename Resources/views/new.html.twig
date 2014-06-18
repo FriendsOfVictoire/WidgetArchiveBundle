@@ -1,13 +1,8 @@
+{% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
 {% trans_default_domain "victoire" %}
 
 {% block body %}
-
-<div id="widget-{{slot}}" class="add-widget">
-{% block form %}
-    <form method="POST" action="{{path('victoire_core_widget_create', {'page': page.id,'slot':slot, 'type':'archive', 'entity': entity} )}}">
-        {{form_row(form)}}
-        {{form_rest(form)}}
-    </form>
-{% endblock form %}
-</div>
+{{ parent() }}
+<div class="alert alert-warning">{{ 'widget.archive.nocustomisation'|trans({}, 'victoire') }}</div>
 {% endblock body %}
+

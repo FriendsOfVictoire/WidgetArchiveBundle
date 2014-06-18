@@ -19,17 +19,12 @@ class WidgetArchiveType extends WidgetType
      *
      * @param FormBuilderInterface $builder
      * @param array                $options
+     *
+     * @throws \Exception
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('page',
-            null,
-            array(
-                "label" => "",
-                "attr" => array("class" => "hide")
-            )
-        );
-        $builder->add('slot', 'hidden');
+        $builder->add('mode', 'hidden');
     }
 
     /**
