@@ -1,11 +1,11 @@
 victoire_core:
     widgets:
         archive:
-            class: "Victoire\\ArchiveBundle\\Entity\\WidgetArchive"
+            class: "Victoire\\Widget\\ArchiveBundle\\Entity\\WidgetArchive"
             name: archive
 
 jms_translation:
     configs:
         victoire_archive_bundle:
-            dirs: ["@VictoireArchiveBundle"]
-            output_dir: "@VictoireArchiveBundle/Resources/translations"
+            dirs: ["@VictoireWidgetArchiveBundle"]
+            output_dir: "@VictoireWidgetArchiveBundle/Resources/translations"

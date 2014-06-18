@@ -1,5 +1,5 @@
 <?php
-namespace Victoire\ArchiveBundle\Translation;
+namespace Victoire\Widget\ArchiveBundle\Translation;
 
 use JMS\TranslationBundle\Model\Message;
 use JMS\TranslationBundle\Translation\TranslationContainerInterface;

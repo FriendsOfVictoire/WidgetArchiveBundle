@@ -1,18 +1,7 @@
-{% block body %}
-
-{#
-   _   _   _   _   _   _   _
-  / \ / \ / \ / \ / \ / \ / \
- ( C ) o ) m ) m ) o ) n ) s )
-  \_/ \_/ \_/ \_/ \_/ \_/ \_/
-
-#}
-
-<div class="widget" id="widget-{{widget.id}}">
-{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-    {% for year, months in articles %}
+    {% for year, months in content %}
     <li>{{year}}</li>
     <ul>
         {% for month, articles in months %}
@@ -25,8 +14,6 @@
         {% endfor %}
     </ul>
     {% endfor %}
-</ul>
 {% endblock content %}
-</div>
 
-{% endblock body %}
+
