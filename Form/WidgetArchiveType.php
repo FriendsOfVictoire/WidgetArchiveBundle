@@ -21,6 +21,8 @@ class WidgetArchiveType extends WidgetType
      * @param array                $options
      *
      * @throws \Exception
+     *
+     * @SuppressWarnings checkUnusedFunctionParameters
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
