@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\ArchiveBundle\Form;
+namespace Victoire\Widget\ArchiveBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -14,23 +14,20 @@ use Victoire\Bundle\CoreBundle\Form\WidgetType;
  */
 class WidgetArchiveType extends WidgetType
 {
-
     /**
-     * define form fields
+     * Define form fields
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
+     *
+     * @throws \Exception
+     *
+     * @SuppressWarnings checkUnusedFunctionParameters
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('page', null,
-                    array(
-                        "label" => "",
-                        "attr" =>array("class" => "hide")
-                    )
-                )
-                ->add('slot', 'hidden');
+        $builder->add('mode', 'hidden');
     }
-
 
     /**
      * bind form to WidgetRedactor entity
@@ -38,18 +35,21 @@ class WidgetArchiveType extends WidgetType
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
+        parent::setDefaultOptions($resolver);
+
         $resolver->setDefaults(array(
-            'data_class' => 'Victoire\ArchiveBundle\Entity\WidgetArchive',
+            'data_class' => 'Victoire\Widget\ArchiveBundle\Entity\WidgetArchive',
             'widget' => 'archive'
         ));
     }
 
-
     /**
      * get form name
+     *
+     * @return String The widget name
      */
     public function getName()
     {
-        return 'appventus_victoirecorebundle_widgetarchivetype';
+        return 'victoire_widget_form_archive';
     }
 }

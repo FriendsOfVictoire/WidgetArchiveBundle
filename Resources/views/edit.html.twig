@@ -1,0 +1,7 @@
+{% extends 'VictoireCoreBundle:Widget:edit.html.twig' %}
+{% trans_default_domain "victoire" %}
+
+{% block body %}
+{{ parent() }}
+<div class="alert alert-warning">{{ 'widget.archive.nocustomisation'|trans({}, 'victoire') }}</div>
+{% endblock body %}
