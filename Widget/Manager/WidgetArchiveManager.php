@@ -34,16 +34,6 @@ use Victoire\Bundle\CoreBundle\Widget\Managers\WidgetManagerInterface;
 class WidgetArchiveManager extends BaseWidgetManager implements WidgetManagerInterface
 {
     /**
-     * The name of the widget
-     *
-     * @return string
-     */
-    public function getWidgetName()
-    {
-        return 'Archive';
-    }
-
-    /**
      * Get the static content of the widget
      *
      * @param Widget $widget
