@@ -3,6 +3,7 @@ services:
         class: Victoire\Widget\ArchiveBundle\Widget\Manager\WidgetArchiveManager
         arguments: 
             - "@service_container"
+            - "Archive"
 
     widget_archive_manager:
         alias: victoire_core.twig.widget_archive_manager
