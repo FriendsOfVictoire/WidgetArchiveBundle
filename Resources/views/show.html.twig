@@ -2,13 +2,13 @@
 {% trans_default_domain "victoire" %}
 {% block content %}
     {% for year, months in content %}
-    <li>{{year}}</li>
+    <li>{{ year }}</li>
     <ul>
         {% for month, articles in months %}
-        <li>{{month}}</li>
+        <li>{{ month }}</li>
         <ul>
             {% for article in articles %}
-            <li>{{article.createdAt|date('d')}}: <a href="{{path('victoire_core_page_show', {'url': article.url})}}">{{article.title}}</a></li>
+            <li>{{ article.createdAt|date('d') }}: <a href="{{ path('victoire_core_page_show', {'url': article.url}) }}">{{ article.title }}</a></li>
             {% endfor %}
         </ul>
         {% endfor %}

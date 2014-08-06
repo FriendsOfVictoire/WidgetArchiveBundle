@@ -2,10 +2,8 @@
 
 namespace Victoire\Widget\ArchiveBundle\Widget\Manager;
 
-
-use Victoire\Bundle\CoreBundle\Widget\Managers\BaseWidgetManager;
-use Victoire\Bundle\CoreBundle\Entity\Widget;
-use Victoire\Bundle\CoreBundle\Widget\Managers\WidgetManagerInterface;
+use Victoire\Bundle\WidgetBundle\Model\Widget;
+use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
 
 /**
  * CRUD operations on WidgetRedactor Widget
@@ -31,17 +29,17 @@ use Victoire\Bundle\CoreBundle\Widget\Managers\WidgetManagerInterface;
  * By default, the methods throws Exception to notice the developer that he should implements it owns logic for the widget
  *
  */
-class WidgetArchiveManager extends BaseWidgetManager implements WidgetManagerInterface
+class WidgetArchiveContentResolver extends BaseWidgetContentResolver
 {
     /**
      * Get the static content of the widget
-     *
      * @param Widget $widget
+     *
      * @return string The static content
      *
      * @SuppressWarnings checkUnusedFunctionParameters
      */
-    protected function getWidgetStaticContent(Widget $widget)
+    public function getWidgetStaticContent(Widget $widget)
     {
         $em = $this->getEntityManager();
 

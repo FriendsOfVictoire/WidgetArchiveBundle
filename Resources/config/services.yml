@@ -1,19 +1,12 @@
 services:
-    victoire_core.twig.widget_archive_manager:
-        class: Victoire\Widget\ArchiveBundle\Widget\Manager\WidgetArchiveManager
-        arguments: 
-            - "@service_container"
-            - "Archive"
+    victoire_core.widget_menu_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Archive }
 
-    widget_archive_manager:
-        alias: victoire_core.twig.widget_archive_manager
-        
-    #alias to the entity
-    victoire.widget.archive:
-        class: Victoire\Widget\ArchiveBundle\Entity\WidgetArchive
     #alias to the form
     victoire.widget.form.archive:
         class: Victoire\Widget\ArchiveBundle\Form\WidgetArchiveType
         tags:
             - { name: form.type , alias: victoire_widget_form_archive}
-        
+
