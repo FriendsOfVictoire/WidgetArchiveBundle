@@ -7,8 +7,6 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
  *
- * @author Thomas Beaujean
- *
  */
 class Configuration implements ConfigurationInterface
 {
