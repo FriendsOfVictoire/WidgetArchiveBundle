@@ -2,12 +2,9 @@
 
 namespace Victoire\Widget\ArchiveBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
-
 
 /**
  * WidgetArchive form type
@@ -17,7 +14,7 @@ class WidgetArchiveType extends WidgetType
     /**
      * Define form fields
      *
-     * @param FormBuilderInterface $builder
+     * @param FormBuilderInterface $builder
      * @param array                $options
      *
      * @throws \Exception
@@ -31,7 +28,7 @@ class WidgetArchiveType extends WidgetType
 
     /**
      * bind form to WidgetRedactor entity
-     * @param OptionsResolverInterface $resolver
+     * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
