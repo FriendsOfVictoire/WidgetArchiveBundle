@@ -12,7 +12,7 @@ use Victoire\Bundle\CoreBundle\Form\WidgetType;
 class WidgetArchiveType extends WidgetType
 {
     /**
-     * Define form fields
+     * Define form fields.
      *
      * @param FormBuilderInterface $builder
      * @param array                $options
