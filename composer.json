@@ -1,20 +1,20 @@
 {
     "name": "friendsofvictoire/archive-widget",
     "type": "symfony-bundle",
-    "description": "Victoire Cms Blog Archive component",
-    "keywords": ["cms", "victoire", "blog", "archive"],
-    "homepage": "http://appventus.com",
+    "description": "Victoire DCMS Blog Archive widget",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "blog", "archive"],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Paul Andrieux",
-            "email": "paul@appventus.com"
+            "email": "paul@victoire.io"
         }
     ],
     "require": {
         "php"                                 : ">=5.3.3",
         "symfony/framework-bundle"            : "~2.3",
-        "victoire/victoire"                   : ">=0.1.4"
+        "victoire/victoire"                   : "dev-master"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\ArchiveBundle": "" }

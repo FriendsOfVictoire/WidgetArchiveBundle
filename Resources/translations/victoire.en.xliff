@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+  <file source-language="en" target-language="en" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -8,7 +8,7 @@
     <body>
       <trans-unit id="86d6ec83e2db2d2fe587ec9345119061ca8487cc" resname="modal.form.widget.type.archive.label">
         <source>modal.form.widget.type.archive.label</source>
-        <target>Archive des articles de Blog</target>
+        <target>Blog's posts archives</target>
       </trans-unit>
       <trans-unit id="7c274dc63876be15e5bbafb68070ccf04ba9910b" resname="widget.archive.new.action.label">
         <source>widget.archive.new.action.label</source>
@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="163e8c25558ba871851c9aa7c2403abcec347607" resname="widget.archive.nocustomisation">
         <source>widget.archive.nocustomisation</source>
-        <target>Aucun paramètre nécessaire. Merci de sauvegarder pour créer le menu.</target>
+        <target>No settings required. Thank you to click save to create the menu.</target>
       </trans-unit>
     </body>
   </file>

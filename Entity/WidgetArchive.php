@@ -5,7 +5,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetArchive
+ * WidgetArchive.
  *
  * @ORM\Table("vic_widget_archive")
  * @ORM\Entity
