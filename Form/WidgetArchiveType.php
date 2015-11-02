@@ -7,7 +7,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
- * WidgetArchive form type
+ * WidgetArchive form type.
  */
 class WidgetArchiveType extends WidgetType
 {
@@ -27,23 +27,24 @@ class WidgetArchiveType extends WidgetType
     }
 
     /**
-     * bind form to WidgetRedactor entity
+     * bind form to WidgetRedactor entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class' => 'Victoire\Widget\ArchiveBundle\Entity\WidgetArchive',
-            'widget' => 'archive'
-        ));
+            'widget'     => 'archive',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
-     * @return String The widget name
+     * @return string The widget name
      */
     public function getName()
     {

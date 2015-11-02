@@ -6,7 +6,7 @@ use Victoire\Bundle\WidgetBundle\Model\Widget;
 use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
 
 /**
- * CRUD operations on WidgetRedactor Widget
+ * CRUD operations on WidgetRedactor Widget.
  *
  * The widget view has two parameters: widget and content
  *
@@ -27,12 +27,12 @@ use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
  * If you just want to use the widget and not the content, remove the method that throws the exceptions.
  *
  * By default, the methods throws Exception to notice the developer that he should implements it owns logic for the widget
- *
  */
 class WidgetArchiveContentResolver extends BaseWidgetContentResolver
 {
     /**
-     * Get the static content of the widget
+     * Get the static content of the widget.
+     *
      * @param Widget $widget
      *
      * @return string The static content
@@ -45,9 +45,9 @@ class WidgetArchiveContentResolver extends BaseWidgetContentResolver
 
         $articleRepo = $em->getRepository('VictoireBlogBundle:Article');
 
-        $articles = $articleRepo->findBy(array(), array('createdAt' => 'DESC'));
+        $articles = $articleRepo->findBy([], ['createdAt' => 'DESC']);
 
-        $articlesArray = array();
+        $articlesArray = [];
 
         //parse article
         foreach ($articles as $article) {

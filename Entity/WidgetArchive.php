@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\ArchiveBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -12,5 +13,4 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
  */
 class WidgetArchive extends Widget
 {
-
 }
