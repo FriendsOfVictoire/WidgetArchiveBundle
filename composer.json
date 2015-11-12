@@ -1,24 +1,41 @@
 {
-    "name": "friendsofvictoire/archive-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire DCMS Blog Archive widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "FoV", "Dynamic", "CMS", "blog", "archive"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/archive-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire DCMS Blog Archive widget",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "FoV",
+        "Dynamic",
+        "CMS",
+        "blog",
+        "archive"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Paul Andrieux",
+            "name" : "Paul Andrieux",
             "email": "paul@victoire.io"
         }
     ],
-    "require": {
-        "php"                       : ">=5.3.3",
-        "symfony/framework-bundle"  : "~2.3",
-        "victoire/victoire"         : "~1.3.0"
+    "require"          : {
+        "php"                     : ">=5.3.3",
+        "symfony/framework-bundle": "~2.3",
+        "victoire/victoire"       : "~1.3.0"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\ArchiveBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\ArchiveBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/ArchiveBundle"
+    "target-dir"       : "Victoire/Widget/ArchiveBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }
