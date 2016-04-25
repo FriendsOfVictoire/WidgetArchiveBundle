@@ -2,7 +2,7 @@ victoire_core:
     widgets:
         archive:
             class: "Victoire\\Widget\\ArchiveBundle\\Entity\\WidgetArchive"
-            name: archive
+            name: Archive
 
 jms_translation:
     configs:

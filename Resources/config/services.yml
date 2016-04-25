@@ -3,6 +3,9 @@ services:
         class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Archive }
+    #alias to the entity
+    victoire.widget.archive:
+        class: Victoire\Widget\ArchiveBundle\Entity\WidgetArchive
 
     #alias to the form
     victoire.widget.form.archive:
